@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="203dp"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="183dp"
+        android:layout_height="250dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/rounded_corner"
+        android:clipChildren="true"
+        android:clipToPadding="true"
+        android:elevation="8dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corner"
+            android:padding="4dp">
+
+            <ImageView
+                android:id="@+id/ivBookCover"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/cover" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvBookTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name book"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/tvPubDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name book"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/ivHeart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="18dp"
+        android:src="@drawable/heart_black"
+        android:translationZ="999dp" />
+</RelativeLayout>
